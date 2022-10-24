@@ -14,7 +14,7 @@ class MusicPlugin(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.db = bot.plugin_db.get_partition(self)
-        self.lavalink = {"host":node2.lewdhutao.tech "", "password":lewdhutao "", "port": 443}
+        self.lavalink = {"host": "node2.lewdhutao.tech", "password": "lewdhutao", "port": 443}
         asyncio.create_task(self.update())
 
     def update(self):
